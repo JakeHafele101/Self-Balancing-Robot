@@ -1,0 +1,25 @@
+setup libraries;
+setup first run through code;
+
+get MPU data;
+get ultrasonic sensor data;
+check for/get receiver data;
+
+switch case for state of robot(receiver data){
+
+  forward();
+  backward();
+  left();
+  right();
+  stop(); 
+  
+}
+
+forward(){
+  Check Ultrasonic sensor to see if hit wall;
+  Check MPU to see if falling;
+  move forward or correct for falling;
+  stop if close to a wall;
+}
+
+Other movement functions similar to forward just reversed motor movements;
